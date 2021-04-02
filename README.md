@@ -14,5 +14,38 @@ To add a `copy` button to a code snippet, add the following line above the code 
 {% include code_header.html %}
 ```
 
+To modify the sidebar, the following config shows how to add links, folders and subfolders
+```yaml
+entries:
+  - product: Vehicles
+    folders:
+      - title: Cars
+        folderitems:
+          - title: Car Overview
+            url: car_overview.html
+          - subfolder:
+              - title: Luxury
+                subfolderitems:
+                  - title: Lexus
+                    url: /lexus.html
+                  - title: Tesla
+                    url: /tesla.html
+          - subfolder:
+              - title: Sports
+                subfolderitems:
+                  - title: Ferarri
+                    url: /ferarri.html
+      - title: Trucks
+        folderitems:
+          - title: Utility
+            url: /utility_trucks.html
+          - title: Semi
+            url: /semitrucks.html
+```
+
 See [upstream](https://github.com/tomjoht/documentation-theme-jekyll) for additional usage instructions
 
+## Changes from the fork
+Added ability to show copy button with code snippets (see above)
+
+Refactored how to declare the sidebar (see above)
