@@ -24,17 +24,17 @@ entries:
           - title: Car Overview
             url: car_overview.html
           - subfolder:
-              - title: Luxury
-                subfolderitems:
-                  - title: Lexus
-                    url: /lexus.html
-                  - title: Tesla
-                    url: /tesla.html
+              title: Luxury
+              subfolderitems:
+                - title: Lexus
+                  url: /lexus.html
+                - title: Tesla
+                  url: /tesla.html
           - subfolder:
-              - title: Sports
-                subfolderitems:
-                  - title: Ferarri
-                    url: /ferarri.html
+              title: Sports
+              subfolderitems:
+                - title: Ferarri
+                  url: /ferarri.html
       - title: Trucks
         folderitems:
           - title: Utility
